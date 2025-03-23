@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --default-color: #090;
+    --default-hover-color: #0c77ba;
+
+    --a-color: #090;
+    --a-hover-color: #090;
+    --text-color:#000;
+
+    --bg-font-color:#FFF;
+    --bg-header-color:#FFFFFF;
+    --bg-navbar-color:#F8F9FA;
+    --bg-dropdown-color:#F8F8F8;
+    --bg-footer-color:#F8F9FA;
+
+    --tr0-color:#daf8da;
+    --tr1-color:#bbf8bb;
+    --tr-hover-color:#95fa95;
+    
+
+  
+  }
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+li{
+    list-style: none !important;
+}
+a {
+    color: black !important;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00732d;
+    text-decoration: none;
+}
+
+/*back to top*/
+.top-header {
+    font-size: 14px;
+    padding: auto;
+}
+/*navbar*/
+.nav {
+    align-items: baseline;
+}
+.navbar .user{
+    display: none;
+}
+.navbar .cart{
+    display: none;
+}
+.navbar img {
+    width: 6rem;
+}
+.navbar .cart-box{
+    display: flex;
+}
+.navbar ul {
+    padding: 0;
+}
+.navbar .nav-link {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.navbar .search {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    align-items: center;
+    padding: 6px 9px;
+    margin-right: 0.8rem;
+}
+.navbar .search input {
+    background:transparent ;
+    border: none;
+
+}
+.navbar .search input:focus {
+    outline: none;
+    font-size: 1rem;
+}
+.navbar .search input::placeholder {
+    font-size: 14px;
+}
+.navbar .mybox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.navbar .mybox .mycart{
+    font-size: 26px;
+}
+.sticky-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    background: white; /* Keep the background to prevent transparency issues */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+    transition: all 0.3s ease-in-out;
+}
+
+.dropdown_menu {
+  display: none;
+}
+.dropdown_menu .dropdown_content{
+    position: absolute;
+    width:40rem;
+    top: 3rem;
+    left: -1rem;
+    padding: 5px 30px;
+    padding-bottom: 30px;
+    background-color:#F8F8F8;
+    border: 1px solid black;
+    border-radius: 5px;
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+    z-index: 20;
+}
+.dropdown_menu .dropdown_content_right{
+    position: absolute;
+    width:40rem;
+    top: 3rem;
+    right: -2rem;
+    padding: 5px 30px;
+    padding-bottom: 30px;
+    background:#F8F8F8;
+    border: 1px solid black;
+    border-radius: 5px;
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+    z-index: 20;
+}
+.dropdown_menu .dropdown_content_small{
+    position: absolute;
+    width: 17rem;
+    top: 3rem;
+    left: -2rem;
+    padding: 20px 30px;
+    padding-bottom: 30px;
+    background-color:#F8F8F8;
+    border: 1px solid black;
+    border-radius: 5px;
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+    z-index: 20;
+}
+
+.show {
+    display: block;
+}
+
+.bar{
+    width: 1rem;
+    position: absolute;
+    border-top: 5px solid black;
+    border-radius: 10px;
+    width: 100%;
+    top: 2.7rem;
+    z-index: 10;
+}
+.video-section{
+    position: relative;    
+}
+
+.video-section img{
+    width: 100%;
+    height: 80vh;
+    object-fit: fill;
+    
+}
+/*card*/
+.card{
+    border: none;
+}
+.card .card-body{
+    text-align: center;
+}
+.card .card-body .card-title{
+    font-weight: bold;
+}
+/*footer*/
+footer figure{
+    font-weight: bold;
+}
+footer .down-footer{
+    padding: 2rem 0;
+    margin-bottom: 0;
+    background: var(--bg-footer-color);
+}
+
+.back-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    
+}

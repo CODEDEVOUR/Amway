@@ -1,0 +1,119 @@
+/* Desktop (large screens) */
+@media (min-width: 1024px) {
+    .my-toggler{
+        display: none;
+    }
+}
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .top-header{
+        display: none;
+    }
+    .navbar{
+        padding: 1rem 0;
+    }
+    .navbar .search{
+        margin: auto;
+    }
+    .navbar .mybox{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .navbar .mybox .user{
+        display: block;
+    }
+    .navbar .mybox .user i{
+        font-size:29px;
+    }
+}
+/* Mobile */
+@media (max-width: 767px) {
+    /* header */
+    .dropdown_content{
+        display: none;
+    }
+    .dropdown_content_small{
+        display: none;
+    }
+    .top-header{
+        display: none;
+    }
+    .navbar .search {
+        order: 1;
+        width: 100%;
+        padding: 6px 10px;
+        margin-top: 0.5rem;
+    }
+    .navbar .mybox{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .navbar .mybox .user{
+        display: block;
+    }
+    .navbar .mybox .user i{
+        font-size:30px;
+    }
+    .offcanvas-body {
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        height: 180vh; 
+    }
+    .offcanvas-body ul li{
+        padding: 0.3rem 0;
+    }
+    /* product section */
+    .Product-section img{
+        width: 100%;
+    }
+    .Product-section h1{
+        padding: 0 5rem;
+        text-align: center;
+    }
+    .Product-section p{
+        font-size: 1rem;
+        padding: 1rem;
+        padding-top: 0;
+    }
+    .Product-section .Shop-click{
+        justify-content: center;
+    }
+    .Product-section .Shop-click a{
+        font-size: 0.9rem;
+    }
+    /* one-section */
+    .one-section img{
+        width: 100%;
+    }
+    .one-section .row{
+        text-align: center;
+    }
+    .one-section p{
+        font-size: 0.9rem;
+        padding-top: 0;
+    }
+    /* Recommendation section */
+    .Recommendation-section .row{
+        display: none;
+    }
+    .Recommendation-section .card{
+        padding:0 2rem;
+    }
+    /* three-section */
+    .three-section img{
+        width: 100%;
+    }
+    .three-section .row{
+        text-align: center;
+    }
+    .three-section p{
+        font-size: 0.9rem;
+        padding-top: 0;
+    }
+    /* footer-section */
+    footer .down-footer p{
+        text-align: center;
+    }
+}
